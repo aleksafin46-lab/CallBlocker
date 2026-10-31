@@ -1,4 +1,4 @@
-name: Build Android APK
+name: Build CallBlocker APK
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build APK (Release/Debug)
+      - name: Build APK (Debug)
         run: ./gradlew assembleDebug
 
       - name: Upload APK artifact
